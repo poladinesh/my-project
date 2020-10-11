@@ -36,6 +36,6 @@ jobs:
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-    - name: print docker image name
+    - name: print docker image name from above step
       run: echo ${{steps.build_push_image.outputs.imageFullName}}
          
